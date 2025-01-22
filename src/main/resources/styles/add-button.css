@@ -1,0 +1,28 @@
+.add-button {
+    -fx-background-color: linear-gradient(to bottom, #f7a440, #e87b1e); /* Carrot gradient */
+    -fx-text-fill: #ffffff; /* White text for contrast */
+    -fx-font-size: 14px; /* Slightly smaller font for compact buttons */
+    -fx-font-weight: bold;
+    -fx-padding: 5 15; /* Adjust padding for smaller button size */
+    -fx-background-radius: 20; /* Rounded corners */
+    -fx-border-radius: 20;
+
+    -fx-effect: drop shadow(gaussian, rgba(0,0,0,0.2), 5, 0.3, 2, 2),
+    drop shadow(gaussian, rgba(255,255,255,0.8), 5, 0.3, -2, -2);
+
+    -fx-border-color: transparent; /* No border initially */
+    -fx-cursor: hand; /* Pointer cursor for better UX */
+    -fx-transition: 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.add-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e87b1e, #d76a0f); /* Darker carrot gradient on hover */
+    -fx-effect: drop shadow(gaussian, rgba(255,255,255,1), 5, 0.3, -2, -2),
+    drop shadow(gaussian, rgba(0,0,0,0.15), 5, 0.3, 2, 2);
+}
+
+.add-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #d76a0f, #c75b09); /* Even darker carrot gradient when pressed */
+    -fx-effect: drop shadow(gaussian, rgba(0,0,0,0.2), 5, 0.3, -2, -2),
+    drop shadow(gaussian, rgba(255,255,255,0.7), 5, 0.3, 2, 2);
+}
