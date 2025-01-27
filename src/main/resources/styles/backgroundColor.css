@@ -1,0 +1,22 @@
+/* Gradient background with hover effect */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, cadetblue, #5f9ea0, #4682b4);
+  transition: background 0.5s ease; /* Smooth transition */
+}
+
+body:hover {
+  background: linear-gradient(135deg, #4682b4, #5f9ea0, cadetblue); /* Reverse gradient on hover */
+}
+
+/* Centered text */
+h1 {
+  text-align: center;
+}
+
